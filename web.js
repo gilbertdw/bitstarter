@@ -1,5 +1,5 @@
 var fs = require('fs');
-var buf = fs.readFileSync('index.html')
+var buf = fs.readFileSync('index.html');
 var express = require('express');
 var app = express();
 app.use(express.logger());
