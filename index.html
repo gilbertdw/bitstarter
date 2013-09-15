@@ -16,7 +16,7 @@
     <style type="text/css">
 
       /* Large desktop */
-      @media(max-width: 960px) {
+      @media(min-width: 980px) {
         body {
           padding-top: 60px;
         }
@@ -86,7 +86,7 @@
         text-align: justify;
       }
       .asset {
-        .padding: 2.5% 0%;
+        padding: 2.5% 0%;
       }
       .footer {
         color: #cccccc;
@@ -149,7 +149,7 @@
 
       <div class="row-fluid pitch">
 	<div class="span5 offset1 video">
-	  <img class="img-poloroid" src="http://placehold.it/480x300">
+	  <img class="img-polaroid" src="http://placehold.it/480x300">
 	</div>
 
 	<!--We define a new 'actions' div to contain statistics, order, and share buttons. -->
@@ -203,13 +203,12 @@
     <!-- http://twitter.github.io/bootstrap/base-css.html#imgaes -->
     <!-- http://placehold.it -->
     <div class="row-fluid section1">
-      <div class-"span5 offset1 asset">
-	<img class="img-poloroid" src="http://placehold.it/480x300">
+      <div class="span5 offset1 asset">
+	<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
       <div class="span5 copy">
 	<p>
-
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 	   Proin porta ante non turpis lacinia interdum. Sed sollicitudin 
 	   pharetra dui eu feugiat. Vestibulum elit nibh, tristique 
 	   congue accumsan vel, ullamcorper eu mi. Nulla accumsan sed 
@@ -220,7 +219,6 @@
 	   turpis. Cras convallis a ipsum nec tristique. Nullam id 
 	   scelerisque lacus. In condimentum, metus eu placerat sagittis, 
 	   nulla dui hendrerit felis, et dignissim diam orci ultrices arcu.	  
-
 	</p>
       </div>
     </div>
@@ -228,20 +226,74 @@
     <div class="row-fluid section2">
       <div class="span5 offset1 copy copy-right">
 	<p>
-
-
+	  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	   Proin porta ante non turpis lacinia interdum. Sed sollicitudin 
+	   pharetra dui eu feugiat. Vestibulum elit nibh, tristique 
+	   congue accumsan vel, ullamcorper eu mi. Nulla accumsan sed 
+	   libero nec semper. Praesent convallis vulputate turpis, eu
+	   ultricies felis molestie vitae. Donec et tellus et enim 
+	   rhoncus interdum. In congue dignissim lectus id scelerisque. 
+	   Nullam eros risus, euismod sit amet eros id, volutpat porttitor 
+	   turpis. Cras convallis a ipsum nec tristique. Nullam id 
+	   scelerisque lacus. In condimentum, metus eu placerat sagittis, 
+	   nulla dui hendrerit felis, et dignissim diam orci ultrices arcu.	  
 	  More copy, etc.
 	</p>
       </div>
       <div class="span5 asset">
-	<img class="img-poloroid" src="http://placehold.it/480x300">
+	<img class="img-polaroid" src="http://placehold.it/480x300">
       </div>
     </div>
 
-    
+    <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+    <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+    <div class="row-fluid faq">
+      <div class="span10 offset1">
+        <h3>FAQ</h3>
+        <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                 data-parent="#accordion2" href="#collapseOne">
+                What does FAQ stand for?
+              </a>
+            </div>
+            <div id="collapseOne" class="accordion-body collapse">
+              <div class="accordion-inner">
+                Frequently Asked Question.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-group">
+            <div class="accordion-heading">
+              <a class="accordion-toggle" data-toggle="collapse"
+                 data-parent="#accordion2" href="#collapseTwo">
+                What's a Frequently Asked Question?
+              </a>
+            </div>
+            <div id="collapseTwo" class="accordion-body collapse">
+              <div class="accordion-inner">
+                A question which is commonly asked by users.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+    </div>
 
-
-
-</body>
+    <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+    <!-- http://creativecommons.org/licenses/ -->
+    <div class="row-fluid footer">
+      <div class="span12">
+        <p>This work is licensed under
+          the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+            By-SA 3.0
+          </a>, without all the cruft that would otherwise be
+          put at the bottom of the page.</p>
+      </div>
+    </div>
+  </div>
+  </body>
 </html>
